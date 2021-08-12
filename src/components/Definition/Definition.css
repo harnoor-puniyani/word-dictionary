@@ -1,0 +1,40 @@
+.meanings{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 55vh;
+    /* justify-content: space-evenly; */
+    scrollbar-width: thin;
+    /* width: 100%; */
+    margin: 5vh 1vw;
+    padding: 10px 0px;
+    overflow-x: hidden;
+    border: 7px solid rgb(112, 117, 114);
+    text-align: left;
+}
+.subtitle{
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+.single-definition{
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin:2vh 3vw ;
+    border-radius: 10px;
+    width: 55vw;
+    /* align-items: center; */
+}
+
+@media (max-width:900px) {
+    .meanings{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 60vh;
+    }
+    .single-definition{
+        width: 70vw;
+        margin: 2vh 5vw ;
+    }
+}
